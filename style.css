@@ -680,3 +680,82 @@ small, .muted {
   font-size: 10.5px;
   line-height: 14px;
 }
+
+/* ===== LOGOS / STORIES / COMMUNITY ===== */
+.logos {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 40px 32px;
+    border-top: 1px solid var(--border);
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.stories article {
+    padding: 32px;
+    border-right: 1px solid var(--border);
+    min-height: 240px;
+}
+
+.stories article:last-child {
+    border: 0;
+}
+
+.stories h3 {
+    font-size: 22px;
+    margin-top: 40px;
+}
+
+.community {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 1px solid var(--border);
+}
+
+.tiles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: var(--soft);
+}
+
+.tiles div {
+    padding: 24px;
+    border: 1px solid var(--border);
+    font-size: 13px;
+    min-height: 130px;
+}
+
+.tiles small {
+    display: block;
+}
+
+.join {
+    padding: 72px 40px;
+}
+
+.join h2 {
+    margin-top: 48px;
+}
+
+.join .full {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    font: inherit;
+    font-size: 14px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+}
+
+.join .btn.full {
+    justify-content: center;
+}
